@@ -3,47 +3,257 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ala'a | Marketing Portfolio</title>
+
+  <title>Ala'a AlHaj Eid | Marketing Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0c0c0c;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .tag {
+      color: #999;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(50px, 8vw, 100px);
+      line-height: 0.95;
+      margin-bottom: 30px;
+    }
+
+    .highlight {
+      color: #b9ff66;
+    }
+
+    .intro {
+      max-width: 650px;
+      font-size: 21px;
+      color: #bbb;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #b9ff66;
+      color: #111;
+      padding: 14px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #161616;
+      padding: 30px;
+      border-radius: 16px;
+      border: 1px solid #252525;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #aaa;
+    }
+
+    .metric {
+      font-size: 50px;
+      font-weight: bold;
+      color: #b9ff66;
+      margin-bottom: 5px;
+    }
+
+    .contact {
+      border-top: 1px solid #252525;
+    }
+
+    .contact p {
+      color: #aaa;
+      font-size: 19px;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid #222;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media(max-width: 600px) {
+      .hero {
+        min-height: 80vh;
+      }
+
+      .intro {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
 
-  <h1>Ala'a AlHaj Eid</h1>
+  <div class="container">
 
-  <h2>Marketing Manager | Branding • Growth • Partnerships</h2>
+    <section class="hero">
 
-  <p>
-    I build marketing strategies, campaigns, partnerships,
-    and brand experiences that connect businesses with people.
-  </p>
+      <div>
 
-  <hr>
+        <div class="tag">Marketing • Brand • Growth</div>
 
-  <h2>Selected Work</h2>
+        <h1>
+          Ala'a<br>
+          AlHaj Eid<span class="highlight">.</span>
+        </h1>
 
-  <h3>Al Rajhi Bank Jordan</h3>
-  <p>
-    Marketing campaigns, brand development, savings campaigns,
-    partnerships, events and youth-focused initiatives.
-  </p>
+        <p class="intro">
+          Marketing Manager focused on building brands, campaigns,
+          partnerships and experiences that connect businesses with people
+          and create measurable growth.
+        </p>
 
-  <h3>Youth Marketing</h3>
-  <p>
-    Helped drive more than 22% YoY growth in youth account openings
-    through digital onboarding, events and youth-focused communication.
-  </p>
+        <a href="#work" class="button">
+          Explore My Work ↓
+        </a>
 
-  <h3>Campaign Strategy</h3>
-  <p>
-    Experience across campaign planning, content, influencers,
-    digital advertising, OOH, partnerships and activations.
-  </p>
+      </div>
 
-  <hr>
+    </section>
 
-  <h2>Contact</h2>
 
-  <p>LinkedIn | Email</p>
+    <section id="work">
+
+      <h2 class="section-title">Selected Work</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Brand & Campaign Strategy</h3>
+          <p>
+            Building integrated campaigns across digital, OOH,
+            content, influencers, partnerships and on-ground activations.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Youth Marketing</h3>
+
+          <div class="metric">+22%</div>
+
+          <p>
+            YoY growth in youth account openings through digital onboarding,
+            events and youth-focused communication.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Partnerships & Experiences</h3>
+
+          <p>
+            Developing partnerships, sponsorships, CSR initiatives,
+            events and branded experiences that create real engagement.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2 class="section-title">What I Do</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Branding</h3>
+          <p>Brand positioning, identity and communication strategy.</p>
+        </div>
+
+        <div class="card">
+          <h3>Growth</h3>
+          <p>Campaigns designed around measurable business outcomes.</p>
+        </div>
+
+        <div class="card">
+          <h3>Content</h3>
+          <p>Turning strategy into stories people actually want to watch.</p>
+        </div>
+
+        <div class="card">
+          <h3>Partnerships</h3>
+          <p>Building collaborations that create value for both brands and audiences.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="contact">
+
+      <h2 class="section-title">Let's Connect.</h2>
+
+      <p>
+        LinkedIn • Email • Amman, Jordan
+      </p>
+
+    </section>
+
+
+    <footer>
+      © 2026 Ala'a AlHaj Eid
+    </footer>
+
+  </div>
 
 </body>
 </html>
